@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    width: 200px;
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+.quote{
+    position: relative;
+    top: 0.2em;
+}
+
+:root{
+    --base-offset: 5px
+}
+
+p{
+    /* margin-top: var(--base-offset); */
+    margin-top: calc(var(--base-offset*4));
+}
