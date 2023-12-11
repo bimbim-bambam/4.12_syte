@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+    
 }
 
 :root{
-    --background-color: #290B37;
+    --background-color: #1F1D2B;
     --color: white;
     --sec_color: #808191
 }
@@ -18,6 +22,10 @@
     margin-bottom: 2rem;
 }
 
+.margin{
+  margin-left: 30px;
+}
+
 .sidebar{
     width: 200px;
     height: 100vh;
@@ -25,10 +33,40 @@
     color: var(--color);
 }
 
+.searchBar{
+  width: 625px;
+  height: 40px;
+  border-radius: 10px;
+  opacity: 0.1;
+  flex-shrink: 0;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+
+}
+
 .header{
   width: 800px;
   height: 80px;
-  background-color: #ccc;
+  position: absolute;
+  margin-left: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.clientInfo{
+  margin-left: 650px;
+}
+
+.clientText{
+  color: #FFF;
+  font-family: Poppins;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 13px; /* 100% */
+letter-spacing: 0.5px;
+margin-left: 5px;
 }
 
 .menuList{
@@ -53,22 +91,24 @@
 }
 
 .menuText{
-    color: var(--sec_color);
     font-family: Poppins;
     font-size: 11px;
     font-style: normal;
     font-weight: 400;
     line-height: 11px;
     letter-spacing: 2px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .menuActiveElement{
     display: flex;
     align-items: center;
+    font-family: Poppins;
     font-weight: 600;
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
-    justify-content: space-between;
 }
 
 .menuLine{
@@ -118,11 +158,11 @@
   }
   
   input:checked + .slider {
-    background-color: #c921f3;
+    background-color: #FF7551;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #c921f3;
+    box-shadow: 0 0 1px #FF7551;
   }
   
   input:checked + .slider:before {
