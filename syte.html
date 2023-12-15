@@ -8,11 +8,34 @@
 </head>
 <body>
     <header class="header">
-       <img src="/icons/searchBar.svg" class="searchBar">
-       <img src="/icons/avatarTomas.svg" class="clientInfo">
-       <h1 class="clientText">Thomas</h1>
-       <img src="/icons/chevron_down.svg">
-       <img src="/icons/Notification.svg" class="margin">
+        <div class="wrap">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="search ...">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <img src="/icons/search.svg" class="searchIcone">
+        <!-- <form role="search" id="form">
+            <input type="search" id="query" name="q"
+             placeholder="Search..."
+             aria-label="Search through site content">
+            <button>
+              <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+            </button>
+        </form> -->
+        <!-- <form>
+            <input type="text" class="searchBar">
+            <button><img src="/icons/search.svg" class="searchButton"></button>
+        </form>
+       </div> -->
+       <div class="clientMenu">
+           <img src="/icons/avatarTomas.svg" class="clientInf1o">
+           <h1 class="clientText">Thomas</h1>
+           <img src="/icons/chevron_down.svg">
+           <img src="/icons/notification.svg" class="margin">
+       </div>
     </header>
     <div class="sidebar">
         <ul class="gridMenu menuList">
@@ -76,6 +99,93 @@
                 </label><div class="menuText">Night Mode</div></div>
             </li>
         </ul>
+    </div>
+    <div class="contentDiscover">
+        <div class="contentTitle">
+            Discover
+        </div>
+        <div class="cardsDiscover">
+            <div class="card1">
+                <div class="card1TimeMarker">
+                    <h1 class="timeMarkerText">7 min</h1>
+                </div>
+                <h1 class="cardText">
+                    How to do Basic Jumping and how to landing safely
+                </h1>
+                <img src="/icons/firstCard.png" class="cardImage">
+                <div class="cardAuthor">
+                    <img src="/icons/ThomasHope.png" class="authorAvatar">
+                    <h1 class="authorName">Thomas Hope</h1>
+                    <div class="authorInfo">53K views • 2 weeks ago</div>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="card1TimeMarker">
+                    <h1 class="timeMarkerText">10 min</h1>
+                </div>
+                <h1 class="cardText">
+                    Skateboard Tips You need to know
+                </h1>
+                <img src="/icons/card2.png" class="card2Image">
+                <div class="card2Author">
+                    <img src="/icons/TonyAndrew.svg" class="card2AuthorAvatar">
+                    <h1 class="Card2AuthorName">Tony Andrew</h1>
+                    <div class="card2AuthorInfo">53K views  •  2 weeks ago</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="contentMostWatched">
+        <h1 class="secondContentTitle">Most Watched</h1>
+        <div class="mostWatchedcards">
+            <div class="mostWatchedcard">
+                <img src="/icons/MWcard1.png" class="MWcadImage">
+                <h1 class="MWcardNameAuthor">Andy William</h1>
+                <h1 class="MWcardText">Basic how to ride your skateboard comfortly</h1>
+                <h1 class="MWcardInfo">53K views • 2 weeks ago</h1>
+                <img src="/icons/AndyWilliam.svg" class="MWcardAuthorAvatar">
+                <div class="MWtimeMarker">
+                    <h1 class="timeMarkerText">7 min</h1>
+                </div>
+                <img src="/icons/greenEclipse.svg" class="greenCircle">
+            </div>
+            <div class="mostWatchedcard">
+                <img src="/icons/MWcard2.png" class="MWcadImage">
+                <h1 class="MWcardNameAuthor">Johny Wise</h1>
+                <h1 class="MWcardText">Prepare for your first skateboard jump</h1>
+                <h1 class="MWcardInfo">53K views • 2 weeks ago</h1>
+                <img src="/icons/JohnyWise.svg" class="MWcardAuthorAvatar">
+                <div class="MWtimeMarker">
+                    <h1 class="timeMarkerText">7 min</h1>
+                </div>
+                <img src="/icons/orangeEclipse.svg" class="orangeCircle">
+            </div>
+            <div class="mostWatchedcard">
+                <img src="/icons/MWcard3.png" class="MWcadImage">
+                <h1 class="MWcardNameAuthor">Budi Hakim</h1>
+                <h1 class="MWcardText">Tips to playing skateboard on the ramp</h1>
+                <h1 class="MWcardInfo">53K views • 2 weeks ago</h1>
+                <img src="/icons/BudiHakim.svg" class="MWcardAuthorAvatar">
+                <div class="MWtimeMarker">
+                    <h1 class="timeMarkerText">7 min</h1>
+                </div>
+                <img src="/icons/orangeEclipse.svg" class="orangeCircle">
+            </div>
+            <div class="mostWatchedcard">
+                <img src="/icons/MWcard4.png" class="MWcadImage">
+                <h1 class="MWcardNameAuthor">
+                    Wijaya Abadi
+                </h1>
+                <h1 class="MWcardText">Basic Equipment to play skateboard safely</h1>
+                <h1 class="MWcardInfo">53K views • 2 weeks ago</h1>
+                <img src="/icons/WijayaAbadi.svg" class="MWcardAuthorAvatar">
+                <div class="MWtimeMarker">
+                    <h1 class="timeMarkerText">7 min</h1>
+                </div>
+                <img src="/icons/greenEclipse.svg" class="greenCircle">
+            </div>
+        </div>
     </div>
 
 </body>

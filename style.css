@@ -6,20 +6,23 @@
     padding: 0;
     background-color: var(--background-color);
     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
     
 }
 
 :root{
     --background-color: #1F1D2B;
-    --color: white;
-    --sec_color: #808191
+    --color_white: white;
+    --sec_color: #808191;
+    --time_marker: #2427307a;
 }
 
 
 
 .logo{
-    margin-top: 15px;
-    margin-bottom: 2rem;
+  display: flex;
+  margin-top: 2.2rem;
+  margin-bottom: 2rem;
 }
 
 .margin{
@@ -27,46 +30,105 @@
 }
 
 .sidebar{
-    width: 200px;
-    height: 100vh;
+  width: 200px;
+  height: 100vh;
+  position: absolute;
 
-    color: var(--color);
+  color: var(--color_white);
+}
+
+form {
+  background-color: #4654e1;
+  width: 300px;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.7; 
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+svg {
+  color: #fff;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  padding: 10px;
 }
 
 .searchBar{
   width: 625px;
   height: 40px;
   border-radius: 10px;
-  opacity: 0.1;
+  opacity: 0.4;
   flex-shrink: 0;
-  background: #FFF;
+  background: var(--color_white);
   display: flex;
   align-items: center;
+  margin-top: 1rem;
+}
 
+.searchButton{
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  margin-top: -3.1rem;
+  margin-left: 36.5rem;
+  background-color: var(--color_white);
+  opacity: 0.4;
 }
 
 .header{
-  width: 800px;
+  width: 72.375rem;
   height: 80px;
   position: absolute;
-  margin-left: 200px;
+  left: 282px;
+  display: flex;
+  align-items: center;
+}
+
+.clientMenu{
+  width: 176px;
+  height: 32px;
+  margin-left: 83.5rem;
+  top: 50px;
   display: flex;
   align-items: center;
 }
 
 .clientInfo{
-  margin-left: 650px;
+  margin-left: 0;
 }
 
 .clientText{
-  color: #FFF;
+  color: var(--color_white);
   font-family: Poppins;
-font-size: 13px;
-font-style: normal;
-font-weight: 400;
-line-height: 13px; /* 100% */
-letter-spacing: 0.5px;
-margin-left: 5px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px; /* 100% */
+  letter-spacing: 0.5px;
+  margin-left: 5px;
 }
 
 .menuList{
@@ -152,7 +214,7 @@ margin-left: 5px;
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: var(--color_white);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -178,3 +240,349 @@ margin-left: 5px;
   .slider.round:before {
     border-radius: 50%;
   }
+
+.contentDiscover{
+  margin-left: 282px;
+  padding-top: 100px;
+}
+
+.cardsDiscover{
+  display: grid;
+  grid-template-columns: 725px 326px;
+  grid-column-gap: 20px;
+}
+
+.contentTitle{
+  color: var(--color_white);
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.card1{
+  width: 725px;
+  height: 366px;
+  border-radius: 20px;
+  background: #0DAABC;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card1TimeMarker{
+  text-align: center;
+  position: absolute;
+  background: none;
+  width: 46px;
+  height: 20px;
+  background-color: var(--time_marker);
+  border-radius: 20px;
+  bottom: 1.1rem;
+  right: 0.7rem;
+}
+
+.cardText{
+  width: 231px;
+  height: 144px;
+  position: absolute;
+  color: var(--color_white);
+  background: none;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.3px;
+  margin-top: 2.85rem;
+  margin-left: 2.5rem;
+}
+
+.cardImage{
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  background: none;
+}
+
+.cardAuthor{
+  position: absolute;
+  width: 14.625rem;
+  height: 3.75rem;
+  left: 2rem;
+  bottom: 5rem;
+  background: none;
+}
+
+.authorName{
+  position: absolute;
+  color: var(--color_white);
+  top: 0.5rem;
+  left: 5rem;
+  background: none;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px; /* 100% */
+  letter-spacing: 0.5px;
+}
+
+.authorAvatar{
+  position: absolute;
+  background: none;
+}
+
+.authorInfo{
+  color: var(--color_white);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px; /* 100% */
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0.8rem;
+  left: 4rem;
+  background: none;
+}
+
+.card2{
+  width: 22rem;
+  height: 22.875rem;
+  margin-top: 20px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card2Image{
+  width: 100%;
+  aspect-ratio: 0.95 / 1;
+  object-fit: cover;
+  background: none;
+}
+
+.card2Author{
+  position: absolute;
+  width: 14.625rem;
+  height: 3.75rem;
+  left: 2rem;
+  bottom: 5rem;
+  background: none;
+}
+
+.Card2AuthorName{
+  position: absolute;
+  color: var(--color_white);
+  top: -3.5rem;
+  left: 0.5rem;
+  background: none;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px; /* 100% */
+  letter-spacing: 0.5px;
+}
+
+.card2AuthorAvatar{
+  position: absolute;
+  background: none;
+}
+
+.card2AuthorInfo{
+  color: var(--color_white);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px; /* 100% */
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+  position: absolute;
+  top: -2rem;
+  left: 0.5rem;
+  background: none;
+
+}
+
+.contentMostWatched{
+  margin-left: 282px;
+  padding-top: 50px;
+}
+
+.secondContentTitle{
+color: var(--color_white);
+font-family: Poppins;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 100% */
+}
+
+.mostWatchedcards{
+  position: relative;
+  top: 20px;
+  display: grid;
+  grid-template-columns: 259px 259px 259px 259px ;
+  grid-column-gap: 20px ;
+}
+
+.mostWatchedcard{
+  width: 259px;
+  height: 313px;
+  border-radius: 20px;
+  background: #242730;
+  position: relative;
+  overflow: hidden;
+}
+
+.MWcardImage{
+  width: 100%;
+  aspect-ratio: 1 / 2;
+  object-fit: cover;
+}
+
+.MWcardNameAuthor{
+  position: absolute;
+  color: #B7B9D2;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px; /* 100% */
+  letter-spacing: 0.5px;
+  background: none;
+  top: 11.5rem;
+  left: 1.5rem;
+}
+
+.MWcardText{
+  position: absolute;
+  background: none;
+  width: 211px;
+  color: var(--color_white);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: 0.3px;
+  top: 13.2rem;
+  left: 1.5rem;
+}
+
+.MWcardInfo{
+  position: absolute;
+  background: none;
+  color: #808191; 
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px; /* 100% */
+  letter-spacing: 0.5px;
+  top: 17.5rem;
+  left: 1.5rem;
+}
+
+.MWcardAuthorAvatar{
+  position: absolute;
+  background: none;
+  left: 11rem;
+  top: 8.4rem;
+}
+
+.MWtimeMarker{
+  text-align: center;
+  position: absolute;
+  background: none;
+  width: 46px;
+  height: 20px;
+  background-color: var(--time_marker);
+  border-radius: 20px;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.timeMarkerText{
+  margin-top: 5px;
+  background: none;
+  color: var(--color_white);
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 10px; /* 100% */
+  letter-spacing: 0.5px;
+}
+
+.greenCircle{
+  position: absolute;
+  background: none;
+  top: 11.7rem;
+  left: 7.6rem;
+}
+
+.orangeCircle{
+  position: absolute;
+  background: none;
+  top: 11.7rem;
+  left: 7rem;
+}
+
+.searchIcone{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 1.8rem;
+  left: 38.3rem;
+  background: none;
+  
+}
+
+.search {
+  width: 625px;
+  height: 40px;
+  display: flex;
+}
+
+.searchTerm {
+  margin-left: -25.4rem;
+  width: 100%;
+  border-right: none;
+  height: 30px;
+  border-radius: 5px ;
+  outline: none;
+  background: #ffffff11;
+}
+
+.searchTerm:focus{
+  color: var(--color_white);
+}
+
+.searchButton {
+  width: 40px;
+  height: 40px;
+  background: var(--color_white);
+  opacity: 0;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  top: 3.15rem;
+  left: -24rem;
+}
+
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
