@@ -1,192 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+  <title>Document</title>
 </head>
-<body>
-    <header class="header">
-        <div class="wrap">
-            <div class="search">
-                <input type="text" class="searchTerm" placeholder="search ...">
-                <button type="submit" class="searchButton">
-                    <i class="fa fa-search"></i>
-                </button>
-            </div>
-        </div>
-        <img src="/icons/search.svg" class="searchIcone">
-        <!-- <form role="search" id="form">
-            <input type="search" id="query" name="q"
-             placeholder="Search..."
-             aria-label="Search through site content">
-            <button>
-              <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
-            </button>
-        </form> -->
-        <!-- <form>
-            <input type="text" class="searchBar">
-            <button><img src="/icons/search.svg" class="searchButton"></button>
-        </form>
-       </div> -->
-       <div class="clientMenu">
-           <img src="/icons/avatarTomas.svg" class="clientInf1o">
-           <h1 class="clientText">Thomas</h1>
-           <img src="/icons/chevron_down.svg">
-           <img src="/icons/notification.svg" class="margin">
-       </div>
-    </header>
+<body id="body">
+  <div class="page">
     <div class="sidebar">
-        <ul class="gridMenu menuList">
-            <div class="logo"><img src="/icons/logo.svg" alt=""></div>
-            <div class="menuTitle">MENU</div>
-            <div class="menuActiveElement">
-                <img src="/icons/1.svg">
-                <p class="menuText">Discover</p>
-            </div>
-            <div class="menuElement">
-                <img src="/icons/2.svg">
-                <p class="menuText">Trending</p>
-            </div>
-            <div class="menuElement">
-                <img src="/icons/3.svg">
-                <p class="menuText">Streaming</p>
-            </div>
-            <div class="menuElement">
-                <img src="/icons/4.svg">
-                <p class="menuText">Playlist</p>
-            </div>
-            <div class="menuElement">
-                <img src="/icons/5.svg">
-                <p class="menuText">Bookmark</p>
-            </div>
-            <img src="/icons/Line 1.svg" class="menuLine">
+      <h3 class="sidebar__logo">skateboard</h3>
+      <div class="section">
+        <p class="section__header">MENU</p>
+        <ul class="list">
+          <li><button class="element"><img src="./icons/1.svg"><p class="element__name name_active">Discover</p></button></li>
+          <li><button class="element"><img src="./icons/2.svg"><p class="element__name name_inactive">Trending</p></button></li>
+          <li><button class="element"><img src="./icons/3.svg"><p class="element__name name_inactive">Streaming</p></button></li>
+          <li><button class="element"><img src="./icons/4.svg"><p class="element__name name_inactive">Playlist</p></button></li>
+          <li><button class="element"><img src="./icons/5.svg"><p class="element__name name_inactive">Bookmark</p></button></li>
         </ul>
-        <ul class="gridMenu menuList">
-            <li>
-                <div class="menuTitle">CATEGORY</div>
-            </li>
-            <li>
-                <div class="menuElement">
-                    <img src="/icons/1_1.svg">
-                    <p class="menuText"> Live Stream</p>
-                </div>
-            </li>   
-            <li>
-                <div class="menuElement">
-                <img src="/icons/2.svg">
-                    <p class="menuText">Streaming</p>
-                </div>
-            </li>
-            <li>
-                <div class="menuElement">
-                    <img src="/icons/3.svg">
-                    <p class="menuText">Competititon</p>
-                </div>
-            </li>
-                <li>
-                <div class="menuElement">
-                    <img src="/icons/4.svg">
-                    <p class="menuText">Comunity</p>
-                </div>
-            </li>
-            <li>
-                <img src="/icons/Line 1.svg" alt="" class="menuLine">
-                <div class="menuElement"><label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                </label><div class="menuText">Night Mode</div></div>
-            </li>
+        <hr class="section__line">
+      </div>
+      <div class="section">
+        <p class="section__header">CATEGORY</p>
+        <ul class="list">
+          <li><button class="element"><img src="./icons/1_1.svg"><p class="element__name name_inactive">Live Stream</p></button></li>
+          <li><button class="element"><img src="./icons/2.svg"><p class="element__name name_inactive">Tutorial</p></button></li>
+          <li><button class="element"><img src="./icons/3.svg"><p class="element__name name_inactive">Competition</p></button></li>
+          <li><button class="element"><img src="./icons/4.svg"><p class="element__name name_inactive">Community</p></button></li>
         </ul>
+        <hr class="section__line">
+      </div>
+      <div class="sliderBox">
+        <label class="switch">
+          <input type="checkbox" id="slider" >
+          <span class="slider round"></span>
+        </label>
+        <p class="slider__text">Night mode</p>
+      </div>
     </div>
-    <div class="contentDiscover">
-        <div class="contentTitle">
-            Discover
-        </div>
-        <div class="cardsDiscover">
-            <div class="card1">
-                <div class="card1TimeMarker">
-                    <h1 class="timeMarkerText">7 min</h1>
+    <header class="header">
+      <img src="./images/menu.svg" class="header__menu">
+      <div>
+        <form class="header__form">
+          <input type="text" placeholder="Search" class="header__search">
+          <button class="header__searchButton"><img src="./icons/search.svg" class="header__searchIcon"></button>
+        </form>
+      </div>
+      <div class="header__profile">
+        <img src="./icons/ThomasHope.png">
+        <p class="profile__name">Thomas</p>
+        <button class="profile__arrow"><img src="./icons/chevron_down.svg"></button>
+        <button class="profile__notification"><img src="./icons/notification.svg"></button>
+      </div>
+    </header>
+    <div class="content">
+      <div class="discover">
+        <h2 class="discover__title">Discover</h2>
+        <div class="cardWrapper">
+          <div class="discover__card card_active">
+            <img class="card__image image_active" src="./icons/firstCard.png">
+            <h2 class="card__text">How to do
+              Basic Jumping
+              and how to
+              landing safely</h2>
+              <div class="card__avatarBox avatarBox_active">
+                <img src="./icons/ThomasHope.png">
+                <div class="avatar__info">
+                  <h4>Thomas Hope</h4>
+                  <p>53K views  •  2 weeks ago</p>
                 </div>
-                <h1 class="cardText">
-                    How to do Basic Jumping and how to landing safely
-                </h1>
-                <img src="/icons/firstCard.png" class="cardImage">
-                <div class="cardAuthor">
-                    <img src="/icons/ThomasHope.png" class="authorAvatar">
-                    <h1 class="authorName">Thomas Hope</h1>
-                    <div class="authorInfo">53K views • 2 weeks ago</div>
-                </div>
+              </div>
+              <div class="card__duration duration_positionBottom">
+                <p class="duration__text">7 min</p>
+              </div>
+          </div>
+          <div class="discover__card card_inactive">
+            <img class="card__image image_inactive" src="./icons/card2.png">
+            <h2 class="card__text">
+              Skateboard
+              Tips You need
+              to know
+            </h2>
+            <div class="card__avatarBox avatarBox_inactive">
+              <div class="avatar__info">
+                <h4>Tony Andrew</h4>
+                <p>53K views  •  2 weeks ago</p>
+              </div>
+              <img src="./icons/TonyAndrew.svg">
             </div>
-            <div class="card2">
-                <div class="card1TimeMarker">
-                    <h1 class="timeMarkerText">10 min</h1>
-                </div>
-                <h1 class="cardText">
-                    Skateboard Tips You need to know
-                </h1>
-                <img src="/icons/card2.png" class="card2Image">
-                <div class="card2Author">
-                    <img src="/icons/TonyAndrew.svg" class="card2AuthorAvatar">
-                    <h1 class="Card2AuthorName">Tony Andrew</h1>
-                    <div class="card2AuthorInfo">53K views  •  2 weeks ago</div>
-                </div>
+            <div class="card__duration duration_positionBottom">
+              <p class="duration__text">10 min</p>
             </div>
+          </div>
         </div>
-
+      </div>
+      <div class="mostWatched">
+        <h2 class="mostWatched__title">Most Watched</h2>
+        <div class="recomendationsCardWrapper">
+          <div class="mostWatched__card">
+            <img src="./icons/MWcard1.png">
+            <div class="card__duration duration_positionTop">
+              <p class="duration__text">7 min</p>
+            </div>
+            <img class="card__avatar" src="./icons/AndyWilliam.svg">
+            <div class="card__descripton">
+              <div class="card__username">
+                <p>Andy William</p>
+                <div class="status status_online"></div>
+              </div>
+              <p class="card__header">Basic how to ride your skateboard comfortly</p>
+              <p class="card__date">53K views  •  2 weeks ago</p>
+            </div>
+          </div>
+          <div class="mostWatched__card">
+            <img src="./icons/MWcard2.png">
+            <div class="card__duration duration_positionTop">
+              <p class="duration__text">7 min</p>
+            </div>
+            <img class="card__avatar" src="./icons/JohnyWise.svg">
+            <div class="card__descripton">
+              <div class="card__username">
+                <p>Johny Wise</p>
+                <div class="status status_offline"></div>
+              </div>
+              <p class="card__header">Basic how to ride your skateboard comfortly</p>
+              <p class="card__date">53K views  •  2 weeks ago</p>
+            </div>
+          </div>
+          <div class="mostWatched__card">
+            <img src="./icons/MWcard3.png">
+            <div class="card__duration duration_positionTop">
+              <p class="duration__text">7 min</p>
+            </div>
+            <img class="card__avatar" src="./icons/BudiHakim.svg">
+            <div class="card__descripton">
+              <div class="card__username">
+                <p>Budi Hakim</p>
+                <div class="status status_offline"></div>
+              </div>
+              <p class="card__header">Basic how to ride your skateboard comfortly</p>
+              <p class="card__date">53K views  •  2 weeks ago</p>
+            </div>
+          </div>
+          <div class="mostWatched__card">
+            <img src="./icons/MWcard4.png">
+            <div class="card__duration duration_positionTop">
+              <p class="duration__text">7 min</p>
+            </div>
+            <img class="card__avatar" src="./icons/WijayaAbadi.svg">
+            <div class="card__descripton">
+              <div class="card__username">
+                <p class="card__username">Wijaya Abadi</p>
+                <div class="status status_online"></div>
+              </div>
+              <p class="card__header">Basic how to ride your skateboard comfortly</p>
+              <p class="card__date">53K views  •  2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="contentMostWatched">
-        <h1 class="secondContentTitle">Most Watched</h1>
-        <div class="mostWatchedcards">
-            <div class="mostWatchedcard">
-                <img src="/icons/MWcard1.png" class="MWcadImage">
-                <h1 class="MWcardNameAuthor">Andy William</h1>
-                <h1 class="MWcardText">Basic how to ride your skateboard comfortly</h1>
-                <h1 class="MWcardInfo">53K views • 2 weeks ago</h1>
-                <img src="/icons/AndyWilliam.svg" class="MWcardAuthorAvatar">
-                <div class="MWtimeMarker">
-                    <h1 class="timeMarkerText">7 min</h1>
-                </div>
-                <img src="/icons/greenEclipse.svg" class="greenCircle">
-            </div>
-            <div class="mostWatchedcard">
-                <img src="/icons/MWcard2.png" class="MWcadImage">
-                <h1 class="MWcardNameAuthor">Johny Wise</h1>
-                <h1 class="MWcardText">Prepare for your first skateboard jump</h1>
-                <h1 class="MWcardInfo">53K views • 2 weeks ago</h1>
-                <img src="/icons/JohnyWise.svg" class="MWcardAuthorAvatar">
-                <div class="MWtimeMarker">
-                    <h1 class="timeMarkerText">7 min</h1>
-                </div>
-                <img src="/icons/orangeEclipse.svg" class="orangeCircle">
-            </div>
-            <div class="mostWatchedcard">
-                <img src="/icons/MWcard3.png" class="MWcadImage">
-                <h1 class="MWcardNameAuthor">Budi Hakim</h1>
-                <h1 class="MWcardText">Tips to playing skateboard on the ramp</h1>
-                <h1 class="MWcardInfo">53K views • 2 weeks ago</h1>
-                <img src="/icons/BudiHakim.svg" class="MWcardAuthorAvatar">
-                <div class="MWtimeMarker">
-                    <h1 class="timeMarkerText">7 min</h1>
-                </div>
-                <img src="/icons/orangeEclipse.svg" class="orangeCircle">
-            </div>
-            <div class="mostWatchedcard">
-                <img src="/icons/MWcard4.png" class="MWcadImage">
-                <h1 class="MWcardNameAuthor">
-                    Wijaya Abadi
-                </h1>
-                <h1 class="MWcardText">Basic Equipment to play skateboard safely</h1>
-                <h1 class="MWcardInfo">53K views • 2 weeks ago</h1>
-                <img src="/icons/WijayaAbadi.svg" class="MWcardAuthorAvatar">
-                <div class="MWtimeMarker">
-                    <h1 class="timeMarkerText">7 min</h1>
-                </div>
-                <img src="/icons/greenEclipse.svg" class="greenCircle">
-            </div>
-        </div>
-    </div>
-
+  </div>
 </body>
 </html>
